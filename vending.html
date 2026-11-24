@@ -13,8 +13,8 @@
 <meta property="og:url" content="https://zenlockers.com/vending.html">
 <meta property="og:image" content="https://zenlockers.com/vending-install.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=type4">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=exec1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,14 +70,14 @@
 </script>
 <style>
 .buy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px;}
-.buy-item{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--card);}
-.buy-item h3{font-family:'Manrope',sans-serif;font-size:15px;font-weight:800;margin:0 0 6px;color:var(--ink);}
+.buy-item{border:1px solid var(--line);border-radius:4px;padding:18px 20px;background:var(--card);}
+.buy-item h3{font-family:var(--display);font-size:15px;font-weight:800;margin:0 0 6px;color:var(--ink);}
 .buy-item p{margin:0;font-size:13.5px;line-height:1.65;color:var(--slate);}
 @media(max-width:600px){.buy-grid{grid-template-columns:1fr;}}
 </style>
 <style>
 .brand-split{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center;}
-.brand-split figure{margin:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--tint);}
+.brand-split figure{margin:0;border-radius:4px;overflow:hidden;border:1px solid var(--line);background:var(--tint);}
 .brand-split img{display:block;width:100%;height:auto;}
 .brand-note{font-size:12px;color:var(--slate);margin-top:12px;line-height:1.6;}
 @media(max-width:900px){.brand-split{grid-template-columns:1fr;}}
@@ -88,7 +88,7 @@
   <a class="nav-logo" href="index.html">
     <svg width="38" height="38" viewBox="0 0 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <g transform="translate(76 76)">
-        <circle cx="0" cy="0" r="66" fill="none" stroke="#00C4A1" stroke-width="8"/>
+        <circle cx="0" cy="0" r="66" fill="none" stroke="#E4C98F" stroke-width="8"/>
         <circle cx="0" cy="0" r="60" fill="#ffffff"/>
         <path fill="#1e3a5f" d="M0,-60 a60,60 0 0 1 0,120 a30,30 0 0 1 0,-60 a30,30 0 0 0 0,-60 z"/>
         <g fill="#1e3a5f">
@@ -158,38 +158,38 @@
 .vending-intro{text-align:center;margin-bottom:48px;}
 .vending-intro p{color:#44525F;font-size:15px;max-width:700px;margin:12px auto 0;}
 .vendor-section{margin-bottom:56px;}
-.vendor-header{display:flex;align-items:center;gap:16px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid #DAD3C2;}
-.vendor-badge{padding:4px 12px;border-radius:20px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;}
-.vendor-badge.ai{background:rgba(14,122,102,0.08);color:#0E7A66;border:1px solid rgba(14,122,102,0.35);}
+.vendor-header{display:flex;align-items:center;gap:16px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid #D5DCE4;}
+.vendor-badge{padding:4px 12px;border-radius:4px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;}
+.vendor-badge.ai{background:rgba(30,58,95,0.08);color:#1E3A5F;border:1px solid rgba(30,58,95,0.35);}
 .vendor-badge.premium{background:rgba(201,168,76,0.15);color:#C9A84C;border:1px solid rgba(201,168,76,0.3);}
-.vendor-badge.classic{background:#DAD3C2;color:#44525F;border:1px solid #DAD3C2;}
-.vendor-name{font-size:20px;font-weight:600;color:#12222F;}
-.vendor-tagline{font-size:13px;color:#5A6672;margin-left:auto;}
+.vendor-badge.classic{background:#D5DCE4;color:#44525F;border:1px solid #D5DCE4;}
+.vendor-name{font-size:20px;font-weight:600;color:#10202F;}
+.vendor-tagline{font-size:13px;color:#516071;margin-left:auto;}
 .vend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;}
-.vend-card{background:#FDFCF8;border:1px solid #DAD3C2;border-radius:14px;overflow:hidden;transition:transform 0.2s,border-color 0.2s;display:flex;flex-direction:column;}
-.vend-card:hover{transform:translateY(-3px);border-color:rgba(14,122,102,0.35);}
+.vend-card{background:#FFFFFF;border:1px solid #D5DCE4;border-radius:4px;overflow:hidden;transition:transform 0.2s,border-color 0.2s;display:flex;flex-direction:column;}
+.vend-card:hover{transform:translateY(-3px);border-color:rgba(30,58,95,0.35);}
 .vend-card-img{height:200px;overflow:hidden;background:rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;}
 .vend-card-img img{width:100%;height:100%;object-fit:contain;padding:12px;box-sizing:border-box;}
 .vend-card-body{padding:18px;flex:1;display:flex;flex-direction:column;}
-.vend-card-brand{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#0E7A66;margin-bottom:6px;font-weight:600;}
-.vend-card-name{font-size:15px;font-weight:600;color:#12222F;margin-bottom:8px;line-height:1.3;}
-.vend-card-desc{font-size:12px;color:#5A6672;line-height:1.6;flex:1;}
+.vend-card-brand{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#1E3A5F;margin-bottom:6px;font-weight:600;}
+.vend-card-name{font-size:15px;font-weight:600;color:#10202F;margin-bottom:8px;line-height:1.3;}
+.vend-card-desc{font-size:12px;color:#516071;line-height:1.6;flex:1;}
 .vend-card-specs{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;}
-.vend-spec{background:#FDFCF8;border-radius:4px;padding:3px 8px;font-size:10px;color:#5A6672;letter-spacing:0.04em;}
-.vend-card-footer{padding:12px 18px;border-top:1px solid #FDFCF8;display:flex;justify-content:space-between;align-items:center;}
-.vend-price{font-size:13px;font-weight:700;color:#0E7A66;}
-.vend-cta{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#5A6672;transition:color 0.2s;cursor:pointer;text-decoration:none;}
-.vend-cta:hover{color:#0E7A66;}
+.vend-spec{background:#FFFFFF;border-radius:4px;padding:3px 8px;font-size:10px;color:#516071;letter-spacing:0.04em;}
+.vend-card-footer{padding:12px 18px;border-top:1px solid #FFFFFF;display:flex;justify-content:space-between;align-items:center;}
+.vend-price{font-size:13px;font-weight:700;color:#1E3A5F;}
+.vend-cta{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#516071;transition:color 0.2s;cursor:pointer;text-decoration:none;}
+.vend-cta:hover{color:#1E3A5F;}
 @media(max-width:600px){.vend-grid{grid-template-columns:1fr;}.vendor-tagline{display:none;}}
 </style>
 
 <div class="vending-intro">
   <p class="sec-label">OUR VENDING MACHINES</p>
-  <h1 class="sec-title">Vending Placement for <em style="color:#0E7A66;font-style:italic;">Your Property</em></h1>
-  <p>An add-on for properties we already serve with lockers. <strong style="color:#12222F;font-weight:500;">How placement works:</strong> we supply the machine, handle delivery and setup, and keep it stocked and serviced — the property provides the spot and the outlet. Pick a machine type below and request placement; we'll confirm fit and terms for your traffic.</p>
+  <h1 class="sec-title">Vending Placement for <em style="color:#1E3A5F;font-style:italic;">Your Property</em></h1>
+  <p>An add-on for properties we already serve with lockers. <strong style="color:#10202F;font-weight:500;">How placement works:</strong> we supply the machine, handle delivery and setup, and keep it stocked and serviced — the property provides the spot and the outlet. Pick a machine type below and request placement; we'll confirm fit and terms for your traffic.</p>
 </div>
 
-<div style="display:flex;gap:24px;align-items:center;background:rgba(14,122,102,0.08);border:1px solid rgba(14,122,102,0.35);border-radius:16px;padding:20px;margin-bottom:48px;flex-wrap:wrap;"><img src="vending-install.jpg" alt="Zen Lockers AI smart-checkout cooler installed at a Houston property" style="width:210px;height:auto;max-width:100%;border-radius:12px;display:block;flex-shrink:0;" width="824" height="1100"><div style="flex:1;min-width:240px;"><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#0E7A66;font-weight:700;margin-bottom:8px;">Now Installed</div><div style="font-family:'Manrope',sans-serif;font-size:25px;color:#12222F;margin-bottom:8px;">See it in action</div><p style="font-size:13px;color:#5A6672;line-height:1.7;margin:0;">One of our AI smart-checkout coolers, live at a Houston property &mdash; tap to pay, grab, and go. Stocked with snacks and cold drinks, zero staffing required.</p></div></div>
+<div style="display:flex;gap:24px;align-items:center;background:rgba(30,58,95,0.08);border:1px solid rgba(30,58,95,0.35);border-radius:4px;padding:20px;margin-bottom:48px;flex-wrap:wrap;"><img src="vending-install.jpg" alt="Zen Lockers AI smart-checkout cooler installed at a Houston property" style="width:210px;height:auto;max-width:100%;border-radius:4px;display:block;flex-shrink:0;" width="824" height="1100"><div style="flex:1;min-width:240px;"><div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#1E3A5F;font-weight:700;margin-bottom:8px;">Now Installed</div><div style="font-family:var(--display);font-size:25px;color:#10202F;margin-bottom:8px;">See it in action</div><p style="font-size:13px;color:#516071;line-height:1.7;margin:0;">One of our AI smart-checkout coolers, live at a Houston property &mdash; tap to pay, grab, and go. Stocked with snacks and cold drinks, zero staffing required.</p></div></div>
 <!-- HAHA AI Vending -->
 <div class="vendor-section">
   <div class="vendor-header">
@@ -340,8 +340,8 @@
 <footer>
 <div class="footer-main">
 <div class="footer-brand">
-<div class="footer-logo"><svg width="28" height="36" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="0" width="24" height="34" rx="2" fill="none" stroke="#00C4A1" stroke-width="1.5"/><rect x="5" y="3" width="7" height="6" rx="1" fill="#0E7A66"/><rect x="15" y="3" width="7" height="6" rx="1" fill="rgba(14,122,102,0.35)"/><rect x="5" y="12" width="7" height="6" rx="1" fill="rgba(14,122,102,0.35)"/><rect x="15" y="12" width="7" height="6" rx="1" fill="rgba(14,122,102,0.35)"/><rect x="5" y="21" width="17" height="4" rx="1" fill="rgba(14,122,102,0.35)"/><rect x="5" y="28" width="17" height="3" rx="1" fill="rgba(14,122,102,0.08)"/></svg></div>
-<div style="margin-top:10px;"><div style="font-family:'Manrope',sans-serif;font-size:21px;font-weight:600;letter-spacing:0.06em;color:#F5F2EA;">ZEN <span style="color:#00C4A1;">LOCKERS</span></div><div style="font-size:9px;letter-spacing:0.2em;color:#5A6672;margin-top:2px;">PACKAGE PICKUP, PEACE OF MIND</div></div>
+<div class="footer-logo"><svg width="28" height="36" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="0" width="24" height="34" rx="2" fill="none" stroke="#E4C98F" stroke-width="1.5"/><rect x="5" y="3" width="7" height="6" rx="1" fill="#1E3A5F"/><rect x="15" y="3" width="7" height="6" rx="1" fill="rgba(30,58,95,0.35)"/><rect x="5" y="12" width="7" height="6" rx="1" fill="rgba(30,58,95,0.35)"/><rect x="15" y="12" width="7" height="6" rx="1" fill="rgba(30,58,95,0.35)"/><rect x="5" y="21" width="17" height="4" rx="1" fill="rgba(30,58,95,0.35)"/><rect x="5" y="28" width="17" height="3" rx="1" fill="rgba(30,58,95,0.08)"/></svg></div>
+<div style="margin-top:10px;"><div style="font-family:var(--display);font-size:21px;font-weight:600;letter-spacing:0.06em;color:#F4F6F8;">ZEN <span style="color:#E4C98F;">LOCKERS</span></div><div style="font-size:9px;letter-spacing:0.2em;color:#516071;margin-top:2px;">PACKAGE PICKUP, PEACE OF MIND</div></div>
 <p class="footer-tagline">Smart parcel lockers and property equipment for Houston &mdash; quoted, installed, and supported locally.</p>
 <div class="footer-social"><a href="mailto:Jay.Hughes@zenlockers.com" title="Email">@</a><a href="tel:8327242007" title="Call">&#9742;</a><a href="https://www.linkedin.com/in/jayhughes-zenlockers/" title="LinkedIn" target="_blank" rel="noopener">in</a><a href="https://www.instagram.com/zenlockers/" title="Instagram" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.8" cy="6.2" r="1.3" fill="currentColor" stroke="none"/></svg></a></div>
 </div>
